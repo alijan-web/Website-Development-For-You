@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -14,61 +15,64 @@
 }
 
 .myHeader h3 {
-  font-family: "Permanent Marker", cursive;
-  font-weight: 400;
-  font-style: normal;
-  color: aqua;
-  margin-left: 30px;
-}
-@media (max-width: 768px) {
-.myHeader h3 {
-    margin-left: -2px;
-}
-.myHeader img {
-    margin-left: -1px;
-}
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: aqua;
+    margin-left: 30px;
 }
 
-   /* CSS */
-   .button-89 {
-    --b: 3px;   /* border thickness */
-    --s: .45em; /* size of the corner */
+@media (max-width: 768px) {
+    .myHeader h3 {
+        margin-left: -2px;
+    }
+
+    .myHeader img {
+        margin-left: -1px;
+    }
+}
+
+/* CSS */
+.button-89 {
+    --b: 3px;
+    /* border thickness */
+    --s: .45em;
+    /* size of the corner */
     --color: aqua;
     margin-left: 70px;
-    
+
     padding: calc(.5em + var(--s)) calc(.9em + var(--s));
     color: var(--color);
     --_p: var(--s);
     background:
-      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+        conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
     transition: .3s linear, color 0s, background-color 0s;
     outline: var(--b) solid #00000000;
     outline-offset: .6em;
     font-size: 16px;
-  
+
     border: 0;
-  
+
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-  }
-  
-  .button-89:hover,
-  .button-89:focus-visible{
+}
+
+.button-89:hover,
+.button-89:focus-visible {
     --_p: 0px;
     outline-color: var(--color);
     outline-offset: .05em;
-  }
-  
-  .button-89:active {
+}
+
+.button-89:active {
     background: var(--color);
     color: #ff0000;
-  }
+}
 
-     /* Custom media query for hiding button */
-     @media (max-width: 768px) {
-        .button-89 {
-          display: none;
-        }
-      }
+/* Custom media query for hiding button */
+@media (max-width: 768px) {
+    .button-89 {
+        display: none;
+    }
+}
