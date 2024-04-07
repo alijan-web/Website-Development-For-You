@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Header</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+  <style>
+  
+    /* Custom CSS */
+    .navbar {
+      background-color: black !important;
+    }
+    .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+      color: white !important;
+    }
+    .navbar-toggler {
+      border-color: rgb(0, 234, 255) !important;
+      background-color: rgb(0, 234, 255) !important;
+    }
+    .dropdown-menu {
+      background-color: rgb(0, 20, 0) !important;
+    }
+    .dropdown-menu .dropdown-item {
+      color: rgb(255, 255, 255) !important;
+    }
+
+    /* Custom styling for anchor tags */
+   /* Custom styling for anchor tags */
+.navbar-nav .nav-link {
+  color: #ff0000 !important; /* Red color */
+  font-size: 20px;
+  margin-left: 40px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  transition: all ease-in-out 0.3s;
+  border-bottom: solid 2px transparent; /* Add transparent border */
+}
+.navbar-nav .nav-link:hover {
+  border-bottom: solid 2px aqua;
+  color: aqua !important; /* White color on hover */
+}
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light myHeader">
+  <a class="navbar-brand" href="#">
+    <img src="img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+    <h3>Web Deghine.4U</h3>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto myLinks">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+          <a style="background-color: rgb(0, 0, 0);" class="dropdown-item" href="#">Action</a>
+          <a style="background-color: rgb(0, 0, 0);" class="dropdown-item" href="#">Another action</a>
+          <a style="background-color: rgb(0, 0, 0);" class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Products
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+          <a style="background-color: rgb(0, 0, 0);" class="dropdown-item" href="#">Action</a>
+          <a style="background-color: rgb(0, 0, 0);" class="dropdown-item" href="#">Another action</a>
+          <a style="background-color: rgb(0, 0, 0);" class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li>
+        <button class="button-89" role="button">Button 89</button>   
+      </li>
+
+    </ul>
+</div>
+</nav>
+<!-- Bootstrap JS and jQuery (Optional) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
